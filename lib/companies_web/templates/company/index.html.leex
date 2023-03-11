@@ -17,10 +17,10 @@
           </div>
           <div class="column">
             <div class="field">
-              <label class="field" for="search[industry_id]"><%= gettext("Industry") %></label>
+              <label class="field" for="search[industry]"><%= gettext("Industry") %></label>
               <div class="control">
                 <div class="select">
-                  <select id="search[industry_id]" name="search[industry_id]">
+                  <select id="search[industry]" name="search[industry]">
                     <option value=""></option>
                     <%= for industry <- @industries do %>
                       <option value="<%= industry %>" <%= selected(industry, @industry) %>>
